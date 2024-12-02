@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.dashboard-board{
+    width: 100%;
+    height: 100vh;
+    background-color:#FAF9F8;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.first-side{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.side-bar-content{
+    width: 22%;
+    height: 100vh;
+    border-right: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1rem;
+    overflow: scroll;
+    row-gap: 1rem;
+    padding-bottom: 6rem;
+}
+
+.logo-search{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.logo{
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.search-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.75;
+    background-color: #cfc9c9;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    border-radius: 0.75rem;
+}
+
+.search-text-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.search i{
+    color: #b1b1b1;
+}
+
+.search-text p{
+    color: rgb(99, 99, 99);
+    font-size: 0.8rem;
+}
+
+.command-f{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    background-color: #e8e8e8;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.command-f i{
+    color: #b1b1b1;
+}
+
+.command-text p{
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.main-content-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.9rem   ;
+}
+
+.main-body, .label-body{
+    width: fit-content;
+    height: auto;
+}
+
+.main-body h2, .label-body h2{
+    color: #353535;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.main-content{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.home-container, .project-container, .calendar-container, .analytic-container, .wallet-container, .mail-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+    padding: 0 0.75rem;
+    cursor: pointer;
+}
+
+.team-member-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+    padding: 0 0.75rem;
+    cursor: pointer;
+}
+
+.body-icon, .project-icon, .calendar-icon, .team-icon, .analytics-icon, .wallet-icon, .task-icon-active, .mail-icon{
+    width: fit-content;
+    height: auto;
+}
+
+.home-body, .project-body, .calendar-body, .analytic-body, .wallet-body, .task-active-body, .mail-body{
+    width: fit-content;
+    height: auto;
+}
+
+.team-body{
+    width: 100%;
+    height: auto;
+}
+
+.home-body p, .project-body p, .calendar-body p, .team-body p, .analytic-body p, .wallet-body p, .mail-body p, .marketing-body p{
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.home-container i, .project-container i, .calendar-container i, .team-member-container i, .analytic-container i, .wallet-container i, .mail-container i
+{
+    color: rgb(99, 99, 99);
+    font-size: 1rem;
+}
+
+.task-container-active{
+    cursor: pointer;
+    background-color: #EDECF5;
+    color: rgb(101, 81, 250);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+}
+
+.task-container-active:hover{
+    box-shadow: 0.7px 0.7px rgb(0, 0, 10);
+}
+
+.task-container-active p{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.label-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.label-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 2rem;
+    padding: 1rem;
+}
+
+.marketing-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0 0.75rem;
+    cursor: pointer;
+}
+
+.marketing-icon, .marketing-body{
+    width: fit-content;
+    height: auto;
+}
+
+.marketing-icon i{
+    color: lightseagreen;
+}
+
+.development-icon i{
+    color: blue;
+}
+
+.design-icon i{
+    color: orangered;
+}
+
+.D-modeling-icon i{
+    color: purple;
+}
+
+/* Second side of the Dashboard CSS */
+.mother-container-black{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: scroll;
+}
+
+.top-section-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid #555;
+}
+
+.head-title{
+    width: fit-content;
+    height: auto;
+}
+
+.head-title h1{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.head-title-right{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.875rem;
+}
+
+.add-task-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.75rem;
+    border: 2px solid #8080D6;
+    border-radius: 0.75rem;
+    padding: 0.6rem 0.5rem;
+}
+
+.add-task-icon, .add-text, .notification-icon{
+    width: fit-content;
+    height: auto;
+}
+
+.add-task-icon i, .add-text p{
+    font-size: 0.8rem;
+    color: #8080D6;
+    font-weight: 700;
+}
+
+.user-profile{
+    width: fit-content;
+    height: auto;
+    background-color: black;
+    padding: 1rem;
+    background-image: url("./images/background\ image\ design.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1000000rem;
+}
+
+/* Middle section CSS */
+.middle-section-container{
+    background-color: #FAF9F8;
+    width: 100%;
+    height: auto;
+    padding: 0.3rem 3rem 0.3rem 3rem;
+}
+
+.left-right-content{
+    width: 100%;
+    height: auto;
+    border-bottom: 0.2px solid #555;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-middle-content, .right-middle-content{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    /* border: 0.5px solid #555; */
+}
+
+.table-icon-container, .calendar-icon-container, .filter-icon-container, .sort-icon-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.75rem;
+    padding: 0.75rem
+}
+
+.board-icon-container{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.75rem;
+    padding: 0.75rem;
+    color: #5050CA;
+    cursor: pointer;
+    border-bottom: 3px solid #5050CA;
+}
+
+.board-icon, .table-icon, .calendar-icon, .filter-icon, .sort-icon{
+    width: fit-content;
+    height: auto;
+}
+
+.board-icon i{
+    font-size: 1rem;
+}
+
+.board-text{
+    width: fit-content;
+    height: auto;
+}
+
+.board-text p{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.table-text p, .calendar-text p, .filter-text p, .sort-text p{
+    font-size: 0.8rem;
+}
+
+/* Detailed content CSS */
+.detailed-content-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    column-gap: 1rem;
+}
+
+.To-do-first-content{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* border: 2px solid black; */
+    border-radius: 0.75rem;
+    row-gap: 1rem;
+    cursor: pointer;
+}
+
+.design-content-container:hover{
+    color: white;
+    box-shadow: 1px 1px rgba(1, 1, 1, 0.3);
+}
+
+.To-do-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBE5FF;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.To-do-title{
+    width: fit-content;
+    height: auto;
+}
+
+.To-do-title h4{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.To-do-icon{
+    background-color: #ffffff;
+    border-radius: 100000rem;
+    padding: 0.2rem 0.3rem;
+    width: fit-content;
+    height: auto;
+    color: #68727E;
+}
+
+.design-content-container{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 1px 2px 2px 1px rgba(1, 1, 1, 0.1);
+    row-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.design-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.design-content{
+    width: fit-content;
+    height: auto;
+}
+
+.design-content h4{
+    font-size: 0.8rem;
+    color: orange;
+    font-weight: 900;
+}
+
+.Design-icon{
+    width: fit-content;
+    height: auto;
+}
+.Design-icon i{
+    color: #68727E;
+}
+
+.background-image{
+    width: 100%;
+    height: auto;
+    padding: 4rem;
+    background-image: black ;
+    background-image: url("./images/Journey\ Mapping.jpg");
+    border-radius: 0.75rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Customer journey mapping */
+.customer-journey{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 0.3rem ;
+}
+
+.customer-journey-title, .customer-journey-text{
+    width: fit-content;
+    height: auto;
+}
+
+.customer-journey-title h4{
+    font-weight: 550;
+    font-size: 0.8rem;
+}
+
+.customer-journey-text p{
+    font-size: 0.8rem;
+    color: #6f6f6f;
+    font-weight: 600;
+}
+
+.buttons{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+
+.active-btn-text{
+    width: fit-content;
+    height: auto;
+    background-color: #FFF3E6;
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.active-icon i, .active-text p{
+    color: #FFAD60;
+    font-size: 0.8rem;
+}
+
+.inactive-icon i, .inactive-text p{
+    color: #bec3c6;
+    font-size: 0.8rem;
+}
+
+.inactive-btn-text{
+    width: fit-content;
+    height: auto;
+    background-color: #F0F3F5;
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+/* Profile images CSS */
+.profile-profile-content-icons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-containers{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+
+.profile1{
+    width: fit-content;
+    height: auto;
+    background-color: black;
+    background-image: url("./images/avatar1.jpg");
+    border-radius: 10000000rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.profile2{
+    width: fit-content;
+    height: auto;
+    background-color: black;
+    background-image: url("./images/avatar2.jpg");
+    border-radius: 10000000rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    position: absolute;
+    left: 1.5rem;
+    z-index: 5;
+}
+
+.profile3{
+    width: fit-content;
+    height: auto;
+    background-color: black;
+    background-image: url("./images/avatar3.jpg");
+    border-radius: 10000000rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    position: absolute;
+    left: 3rem;
+}
+
+.profile-icon-content{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    column-gap: 1rem;
+}
+
+.link-content, .message-content{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.link, .message{
+    width: fit-content;
+    height: auto;
+}
+
+.link i, .message i{
+    font-size: 0.75rem;
+    color: #bec3c6;
+}
+
+.message-text p, .link-text p{
+    font-size: 0.75rem;
+    color: #bec3c6;
+}
+
+/* In progress CSS */
+.In-progress-first-content{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    top: -2.3rem;
+    position: relative;
+    row-gap: 1rem;
+    cursor: pointer;
+}
+
+.In-progress-icon-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#DFF5F8;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.In-progress-paragraph{
+    width: 100%;
+    height: auto;
+}
+
+.In-progress-paragraph p{
+    font-size: 0.75rem;
+    color: #6f6f6f;
+}
+
+.In-progress-profile-content-icons{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10rem;
+}
+
+.development-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.development-content{
+    width: fit-content;
+    height: auto;
+}
+
+.development-content h4{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #B19CF7;
+}
+
+.Three-D-modeling-content h4{
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #D55DF3;
+}
+
+.Three-D-modeling-journey-text p{
+    font-size: 0.8rem;
+    color: #6f6f6f;
+}
+
+.modeling-btn-text{
+    width: fit-content;
+    height: auto;
+    background-color: #E2F1DA;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.5rem;
+    
+}
+
+.model-active-icon i, .model-active-text p{
+    color: #99CE7E;
+}
+
+/* Done Content Container */
+.done-first-content{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    top: -3.3rem;
+    row-gap: 1rem;
+    cursor: pointer;
+}
+
+.Done-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #99CE7E;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.done-customer-text{
+    width: 100%;
+    height: auto;
+}
+
+.done-customer-text p{
+    font-size: 0.8rem;
+    color: #6f6f6f;
+}
+
+.done-btn-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 1rem;
+    background-color:#FCF0F2;
+    padding: 0.4rem 0.4rem;
+    border-radius: 0.5rem;
+}
+.done-active-text p, .done-active-icon i{
+    color: #EC8294;
+}
+

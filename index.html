@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organix Task</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./organix icons/organix.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="dashboard-board">
+        <div class="side-bar-content">
+
+            <!-- logo-sections -->
+            <div class="first-side">
+                <div class="logo-search">
+                    <div class="logo">
+                        <img src="./organix icons/organix.png" alt="organix logo">
+                    </div>
+    
+                    <div class="search-content">
+                        <div class="search-text-container">
+                            <div class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+        
+                            <div class="search-text">
+                                <p>Search</p>
+                            </div>
+                        </div>
+                        
+                        <div class="command-f">
+                            <div class="command-icon">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </div>
+    
+                            <div class="command-text">
+                                <p>F</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+            <!-- second side -->
+            <div class="main-content-container">
+                <div class="main-body">
+                    <h2>MAIN MENU</h2>
+                </div>
+                <!-- main-content -->
+                <div class="main-content">
+                    <div class="home-container">
+                        <div class="body-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="home-body">
+                            <p>Home</p>
+                        </div>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-icon">
+                            <i class="fa-solid fa-folder"></i>
+                        </div>
+                        <div class="project-body">
+                            <p>Project</p>
+                        </div>
+                    </div>
+    
+                    <div class="calendar-container">
+                        <div class="calendar-icon">
+                            <i class="fa-solid fa-calendar"></i>
+                        </div>
+                        <div class="calendar-body">
+                            <p>Calendar</p>
+                        </div>
+                    </div>
+    
+                    <div class="team-member-container">
+                        <div class="team-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="team-body">
+                            <p>Team Member</p>
+                        </div>
+                    </div>
+    
+                    <div class="analytic-container">
+                        <div class="analytics-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="analytic-body">
+                            <p>Analytics</p>
+                        </div>
+                    </div>
+    
+                    <div class="wallet-container">
+                        <div class="wallet-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="wallet-body">
+                            <p>Wallet</p>
+                        </div>
+                    </div>
+    
+                    <div class="task-container-active">
+                        <div class="task-icon-active">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <div class="task-active-body">
+                            <p>Tasks</p>
+                        </div>
+                    </div>
+    
+                    <div class="mail-container">
+                        <div class="mail-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="mail-body">
+                            <p>Mail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third-side -->
+            <div class="label-content">
+                <div class="label-body">
+                    <h2>LABEL</h2>
+                </div>
+
+                <div class="label-container">
+                    <div class="marketing-content">
+                        <div class="marketing-icon">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="marketing-body">
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="marketing-content">
+                        <div class="development-icon">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="marketing-body">
+                            <p>Development</p>
+                        </div>
+                    </div>
+
+                    <div class="marketing-content">
+                        <div class="design-icon">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="marketing-body">
+                            <p>Design</p>
+                        </div>
+                    </div>
+
+                    <div class="marketing-content">
+                        <div class="D-modeling-icon">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="marketing-body">
+                            <p>3D Modeling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mother content board -->
+        <div class="mother-container-black">
+            <div class="top-section-container">
+                <div class="head-title">
+                    <h1>Task</h1>
+                </div>
+
+                <div class="head-title-right">
+                    <div class="add-task-container">
+                        <div class="add-task-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+
+                        <div class="add-text">
+                            <p>Add Task</p>
+                        </div>
+                    </div>
+
+                    <div class="notification-icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div class="user-profile">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-section-container">
+                <div class="left-right-content">
+                    <div class="left-middle-content">
+                        <div class="board-icon-container">
+                            <div class="board-icon">
+                                <i class="fa-solid fa-border-all"></i>
+                            </div>
+    
+                            <div class="board-text">
+                                <p>Board</p>
+                            </div>
+                        </div>
+    
+                        <div class="table-icon-container">
+                            <div class="table-icon">
+                                <i class="fa-solid fa-table-columns"></i>
+                            </div>
+    
+                            <div class="table-text">
+                                <p>Table</p>
+                            </div>
+                        </div>
+    
+                        <div class="calendar-icon-container">
+                            <div class="calendar-icon">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+    
+                            <div class="calendar-text">
+                                <p>Calendar</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="right-middle-content">
+                        <div class="filter-icon-container">
+                            <div class="filter-icon">
+                                <i class="fa-solid fa-arrow-up-wide-short"></i>
+                            </div>
+    
+                            <div class="filter-text">
+                                <p>Filter</p>
+                            </div>
+                        </div>
+    
+                        <div class="sort-icon-container">
+                            <div class="sort-icon">
+                                <i class="fa-solid fa-sort"></i>
+                            </div>
+    
+                            <div class="sort-text">
+                                <p>Sort</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed content container would house To do list, In-progress and Done contents-->
+
+            <div class="detailed-content-container">
+                <div class="To-do-first-content">
+                    <div class="To-do-icon-container">
+                        <div class="To-do-title">
+                            <h4>To-Do</h4>
+                        </div>
+
+                        <div class="To-do-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="design-content-container">
+                        <div class="design-body">
+                            <div class="design-content">
+                                <h4>Design</h4>
+                            </div>
+
+                            <div class="Design-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+
+                        <!-- Image-background -->
+                        <div class="background-image">
+
+                        </div>
+
+                        <!-- Customer journey map -->
+                        <div class="customer-journey">
+                            <div class="customer-journey-title">
+                                <h4>Customer Journey Mapping</h4>
+                            </div>
+
+                            <div class="customer-journey-text">
+                                <p>Kidszone</p>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="active-btn-text">
+                                <div class="active-icon">
+                                    <i class="fa-regular fa-flag"></i>
+                                </div>
+
+                                <div class="active-text">
+                                    <p>Medium</p>
+                                </div>
+                            </div>
+
+                            <div class="inactive-btn-text">
+                                <div class="inactive-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                                <div class="inactive-text">
+                                    <p>25 October</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-profile-content-icons">
+                            <div class="profile-containers">
+                                <div class="profile1">
+
+                                </div>
+
+                                <div class="profile2">
+                                    
+                                </div>
+
+                                <div class="profile3">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="profile-icon-content">
+                                <div class="link-content">
+                                    <div class="link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+
+                                    <div class="link-text">
+                                        <p>16</p>
+                                    </div>
+                                </div>
+
+                                <div class="message-content">
+                                    <div class="message">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+
+                                    <div class="message-text">
+                                        <p>21</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second card of Design -->
+                    <div class="design-content-container">
+                        <div class="design-body">
+                            <div class="design-content">
+                                <h4>Design</h4>
+                            </div>
+
+                            <div class="Design-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+
+                        <!-- Customer journey map -->
+                        <div class="customer-journey">
+                            <div class="customer-journey-title">
+                                <h4>UI component Modification</h4>
+                            </div>
+
+                            <div class="customer-journey-text">
+                                <p>Bookly</p>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="active-btn-text">
+                                <div class="active-icon">
+                                    <i class="fa-regular fa-flag"></i>
+                                </div>
+
+                                <div class="active-text">
+                                    <p>Medium</p>
+                                </div>
+                            </div>
+
+                            <div class="inactive-btn-text">
+                                <div class="inactive-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                                <div class="inactive-text">
+                                    <p>28 October</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-profile-content-icons">
+                            <div class="profile-containers">
+                                <div class="profile1">
+
+                                </div>
+
+                                <div class="profile2">
+                                    
+                                </div>
+
+                                <div class="profile3">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="profile-icon-content">
+                                <div class="link-content">
+                                    <div class="link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+
+                                    <div class="link-text">
+                                        <p>03</p>
+                                    </div>
+                                </div>
+
+                                <div class="message-content">
+                                    <div class="message">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+
+                                    <div class="message-text">
+                                        <p>32</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    
+
+
+                </div>
+
+                <!-- In Progress Card Contnet Container -->
+                <div class="In-progress-first-content">
+                    <div class="In-progress-icon-container">
+                        <div class="To-do-title">
+                            <h4>In Progress</h4>
+                        </div>
+
+                        <div class="To-do-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="design-content-container">
+                        <div class="development-body">
+                            <div class="development-content">
+                                <h4>Development</h4>
+                            </div>
+
+                            <div class="Design-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+
+                        <!-- Customer journey map -->
+                        <div class="customer-journey">
+                            <div class="customer-journey-title">
+                                <h4>Database Customization</h4>
+                            </div>
+
+                            <div class="customer-journey-text">
+                                <p>Uber</p>
+                            </div>
+
+                            <div class="In-progress-paragraph">
+                                <p>Customzing the database for Uber's internal system, focusing on micro interaction.</p>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="active-btn-text">
+                                <div class="active-icon">
+                                    <i class="fa-regular fa-flag"></i>
+                                </div>
+
+                                <div class="active-text">
+                                    <p>Medium</p>
+                                </div>
+                            </div>
+
+                            <div class="inactive-btn-text">
+                                <div class="inactive-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                                <div class="inactive-text">
+                                    <p>21 October</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="In-progress-profile-content-icons">
+                            <div class="profile-containers">
+                                <div class="profile1">
+
+                                </div>
+
+                                <div class="profile2">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="profile-icon-content">
+                                <div class="link-content">
+                                    <div class="link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+
+                                    <div class="link-text">
+                                        <p>10</p>
+                                    </div>
+                                </div>
+
+                                <div class="message-content">
+                                    <div class="message">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+
+                                    <div class="message-text">
+                                        <p>06</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second card of Design -->
+                    <div class="design-content-container">
+                        <div class="design-body">
+                            <div class="Three-D-modeling-content">
+                                <h4>3D MODELING</h4>
+                            </div>
+
+                            <div class="Design-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+
+                        <!-- Customer journey map -->
+                        <div class="customer-journey">
+                            <div class="customer-journey-title">
+                                <h4>Fix Interior Planing</h4>
+                            </div>
+
+                            <div class="customer-journey-text">
+                                <p>Hotel Nice</p>
+                            </div>
+
+                            <div class="Three-D-modeling-journey-text">
+                                <p>Addressing layout and functional issues in the 3D modeling of interior spaces.</p>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="modeling-btn-text">
+                                <div class="model-active-icon">
+                                    <i class="fa-regular fa-flag"></i>
+                                </div>
+
+                                <div class="model-active-text">
+                                    <p>Low</p>
+                                </div>
+                            </div>
+
+                            <div class="inactive-btn-text">
+                                <div class="inactive-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                                <div class="inactive-text">
+                                    <p>13 October</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-profile-content-icons">
+                            <div class="profile-containers">
+                                <div class="profile1">
+
+                                </div>
+
+                                <div class="profile2">
+                                    
+                                </div>
+
+                                <div class="profile3">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="profile-icon-content">
+                                <div class="link-content">
+                                    <div class="link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+
+                                    <div class="link-text">
+                                        <p>19</p>
+                                    </div>
+                                </div>
+
+                                <div class="message-content">
+                                    <div class="message">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+
+                                    <div class="message-text">
+                                        <p>09</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Done Content Container -->
+                <div class="done-first-content">
+                    <div class="Done-container">
+                        <div class="To-do-title">
+                            <h4>Done</h4>
+                        </div>
+
+                        <div class="To-do-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                            
+                    </div>
+
+                    <div class="design-content-container">
+                        <div class="development-body">
+                            <div class="design-content">
+                                <h4>Design</h4>
+                            </div>
+
+                            <div class="Design-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+
+                        <!-- Customer journey map -->
+                        <div class="customer-journey">
+                            <div class="customer-journey-title">
+                                <h4>Redesign WordPress Website</h4>
+                            </div>
+
+                            <div class="customer-journey-text">
+                                <p>Design Lab</p>
+                            </div>
+
+                            <div class="In-progress-paragraph">
+                                <p>Redesigning the website for Design Lab to enhance usability and visual appeal.</p>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="done-btn-text">
+                                <div class="done-active-icon">
+                                    <i class="fa-regular fa-flag"></i>
+                                </div>
+
+                                <div class="done-active-text">
+                                    <p>High</p>
+                                </div>
+                            </div>
+
+                            <div class="inactive-btn-text">
+                                <div class="inactive-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                                <div class="inactive-text">
+                                    <p>17 October</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="In-progress-profile-content-icons">
+                            <div class="profile-containers">
+                                <div class="profile1">
+
+                                </div>
+
+                                <div class="profile2">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="profile-icon-content">
+                                <div class="link-content">
+                                    <div class="link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+
+                                    <div class="link-text">
+                                        <p>02</p>
+                                    </div>
+                                </div>
+
+                                <div class="message-content">
+                                    <div class="message">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+
+                                    <div class="message-text">
+                                        <p>29</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second card of Design -->
+                    <div class="design-content-container">
+                        <div class="design-body">
+                            <div class="Three-D-modeling-content">
+                                <h4>MARKETING</h4>
+                            </div>
+
+                            <div class="Design-icon">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                        </div>
+
+                        <!-- Customer journey map -->
+                        <div class="customer-journey">
+                            <div class="customer-journey-title">
+                                <h4>Facebook Ads Campaign</h4>
+                            </div>
+
+                            <div class="customer-journey-text">
+                                <p>Plantify</p>
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+                            <div class="modeling-btn-text">
+                                <div class="model-active-icon">
+                                    <i class="fa-regular fa-flag"></i>
+                                </div>
+
+                                <div class="model-active-text">
+                                    <p>Low</p>
+                                </div>
+                            </div>
+
+                            <div class="inactive-btn-text">
+                                <div class="inactive-icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+
+                                <div class="inactive-text">
+                                    <p>13 October</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-profile-content-icons">
+                            <div class="profile-containers">
+                                <div class="profile1">
+
+                                </div>
+
+                                <div class="profile2">
+                                    
+                                </div>
+
+                                <div class="profile3">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="profile-icon-content">
+                                <div class="link-content">
+                                    <div class="link">
+                                        <i class="fa-solid fa-link"></i>
+                                    </div>
+
+                                    <div class="link-text">
+                                        <p>03</p>
+                                    </div>
+                                </div>
+
+                                <div class="message-content">
+                                    <div class="message">
+                                        <i class="fa-regular fa-comment"></i>
+                                    </div>
+
+                                    <div class="message-text">
+                                        <p>17</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+    </div>
+</body>
+</html>
